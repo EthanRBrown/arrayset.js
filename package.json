@@ -1,0 +1,14 @@
+{
+  "name": "arraysetjs",
+  "version": "1.0.1",
+  "main": "arrayset.js",
+  "author": "ethan@vms-inc.com",
+  "license": "(MIT OR GPL-3.0)",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.0.0"
+  }
+}
