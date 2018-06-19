@@ -1,14 +1,21 @@
 {
   "name": "arraysetjs",
   "version": "1.0.1",
-  "main": "arrayset.js",
+  "main": "dist/arrayset.js",
   "author": "ethan@vms-inc.com",
   "license": "(MIT OR GPL-3.0)",
   "scripts": {
-    "test": "jest"
+    "build": "webpack",
+    "test": "jest",
+    "prepublishOnly": "webpack"
   },
   "dependencies": {},
   "devDependencies": {
-    "jest": "^23.0.0"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.0.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
   }
 }
