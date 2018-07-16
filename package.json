@@ -1,6 +1,6 @@
 {
   "name": "arraysetjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/arrayset.js",
   "author": "ethan@vms-inc.com",
   "license": "(MIT OR GPL-3.0)",
