@@ -1,6 +1,6 @@
 {
   "name": "arraysetjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/arrayset.js",
   "browser": "dist/arrayset.js",
   "author": "ethan@vms-inc.com",
