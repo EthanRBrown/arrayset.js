@@ -2,7 +2,7 @@
   "name": "arraysetjs",
   "version": "1.0.4",
   "main": "src/arrayset.js",
-  "browser": "dst/arrayset.js",
+  "browser": "dist/arrayset.js",
   "author": "ethan@vms-inc.com",
   "license": "(MIT OR GPL-3.0)",
   "scripts": {
