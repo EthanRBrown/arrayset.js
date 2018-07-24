@@ -2,9 +2,9 @@
   "name": "arraysetjs",
   "version": "1.0.6",
   "main": "src/arrayset.js",
-  "browser": "dist/arrayset.js",
+  "browser": "build/arrayset.js",
   "author": "ethan@vms-inc.com",
-  "repository": "EthanRBrown/arrayset",
+  "repository": "EthanRBrown/arrayset.js",
   "license": "(MIT OR GPL-3.0)",
   "scripts": {
     "build": "webpack",

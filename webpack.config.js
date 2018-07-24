@@ -4,9 +4,8 @@ module.exports = {
   entry: './src/arrayset.js',
   output: {
     filename: 'arrayset.js',
-    library: 'Arrayset',
-    libraryTarget: 'umd',
-    path: path.resolve(__dirname, 'dist')
+    libraryTarget: 'commonjs2',
+    path: path.resolve(__dirname, 'build')
   },
   devtool: 'source-map',
   mode: 'production',
