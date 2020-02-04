@@ -1,3 +1,5 @@
+const mutable = require('./arrayset-mutable')
+
 const contains = (a, x) => typeof x === 'function' ? a.some(x) : a.includes(x)
 const add = (a, x) => contains(a, x) ? a : [...a, x]
 const remove = (a, x) => {
@@ -23,8 +25,9 @@ const minus = (a, b, compare) => {
     ? a.filter(x => !b.some(y => compare(x, y) === 0))
     : a.filter(x => !b.includes(x))
 }
+const fromArray = a => Array.from(new Set(a))
 
-const arrayset= a => ({
+const arrayset = a => ({
   contains: x => contains(a, x),
   add: x => add(a, x),
   remove: x => remove(a, x),
@@ -34,6 +37,7 @@ const arrayset= a => ({
   difference: (b, compare) => minus(a, b, compare),   // alias
 })
 
-arrayset.mutable = require('./arrayset-mutable')
+arrayset.fromArray = fromArray
+arrayset.mutable = mutable
 
 module.exports = arrayset
