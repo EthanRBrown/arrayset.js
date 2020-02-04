@@ -82,6 +82,19 @@ describe('immutable', () => {
     expect(arrayset([1,2,3]).minus([4])).toEqual([1,2,3])
   })
 
+  describe('fromArray', () => {
+    test('empty', () => {
+      expect(arrayset.fromArray([])).toEqual([])
+    })
+  
+    test('no duplicates', () => {
+      expect(arrayset.fromArray([1,3,2]).sort()).toEqual([1,2,3])
+    })
+  
+    test('duplicates', () => {
+      expect(arrayset.fromArray([1,1,3,2,3,2,1]).sort()).toEqual([1,2,3])
+    })
+  })
 })
 
 describe('mutable', () => {
