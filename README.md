@@ -40,7 +40,7 @@ set([1, 2, 3]).intersection([3, 4, 5])    // [3]
 
 set([1, 2, 3]).minus([1, 3])              // [2]
 
-// remove duplicates
+// remove duplicates:
 
 set.fromArray([1,2,3,2,3])                // [1, 2, 3]
 ```
@@ -56,7 +56,7 @@ const a = [1, 2, 3]
 set.mutable(a).union([3, 4])          // a is now [1, 2, 3, 4]
                                       // (which is also returned)
 
-// remove duplicates
+// remove duplicates:
 
 const a = [1, 2, 2, 3]
 set.mutable.fromArray(arr)            // a is now [1, 2, 3]
