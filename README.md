@@ -52,3 +52,14 @@ const arr = [1, 2, 3]
 set.mutable(arr).union([3, 4])        // a is now [1, 2, 3, 4]
                                       // (which is also returned)
 ```
+
+## Contributing
+
+This is a small library without a lot of activity, so generally I'll accept any reasoanble enhancements.  If there are big changes you would like to see, please raise an issue first to discuss.
+
+1. Fork repository
+2. Make code changes & write tests (in _src&#95;&#95;tests&#95;&#95;_)
+3. Make sure all tests pass (`yarn tests`)
+4. Update _README.md_ with documentation (if necessary)
+
+Do not update _CHANGELOG.md_; the maintainer will do that with version releases.
