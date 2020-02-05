@@ -27,12 +27,6 @@ const minus = (a, b, compare) => {
   }
   return a
 }
-const fromArray = a => {
-  for(let i=a.length-1; i>=0; i--) {
-    if(a.slice(0, i).includes(a[i])) a.splice(i, 1)
-  }
-  return a
-}
 
 const arraysetMutable = a => ({
   contains: x => contains(a, x),
@@ -43,7 +37,5 @@ const arraysetMutable = a => ({
   minus: (b, compare) => minus(a, b, compare),
   difference: (b, compare) => minus(a, b, compare),
 })
-
-arraysetMutable.fromArray = fromArray
 
 module.exports = arraysetMutable

@@ -234,24 +234,4 @@ describe('mutable', () => {
       expect(a).toEqual([1,2,3])
     })
   })
-
-  describe('fromArray', () => {
-    test('empty', () => {
-      const a = []
-      arrayset.mutable.fromArray(a)
-      expect(a).toEqual([])
-    })
-
-    test('no duplicates', () => {
-      const a = [1, 3, 2]
-      arrayset.mutable.fromArray([1,3,2])
-      expect(a.sort()).toEqual([1,2,3])
-    })
-
-    test('duplicates', () => {
-      const a = [5,3,4,4,3,5,1,1,3,8,5,3]
-      arrayset.mutable.fromArray(a)
-      expect(a.sort()).toEqual([1,3,4,5,8])
-    })
-  })
 })
