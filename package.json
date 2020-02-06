@@ -3,7 +3,11 @@
   "version": "1.0.10",
   "main": "src/arrayset.js",
   "browser": "build/arrayset.js",
-  "author": "ethan@vms-inc.com",
+  "author": "Ethan Brown <ethan@vms-inc.com>",
+  "contributors": [
+    "Ethan Brown <ethan@vms-inc.com>",
+    "Adam Baroni <adam@vms-inc.com>"
+  ],
   "repository": "EthanRBrown/arrayset.js",
   "license": "(MIT OR GPL-3.0)",
   "scripts": {
