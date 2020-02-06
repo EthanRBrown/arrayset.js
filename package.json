@@ -16,7 +16,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "jest": "^23.0.0",
+    "jest": "^25.1.0",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.0.8"
   }
