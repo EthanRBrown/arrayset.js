@@ -1,6 +1,12 @@
+# v1.0.10
+
+* Adds `fromArray` method to create arrayset instance from JavaScript array (removing duplicates).  Thanks to @alspdx for the work!
+* Update to dependencies to pass `yarn audit`
+
 # v1.0.9
 
-Adds `fromArray` method to create arrayset instance from JavaScript array (removing duplicates).  Thanks to @alspdx for the work!
+Erroneous release that was intended to included the `fromArray` method, but I botched the merge & didn't end up
+pushing the changes as intended.
 
 # Older Versions
 
