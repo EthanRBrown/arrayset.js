@@ -1,4 +1,4 @@
-const arrayset = require('../arrayset')
+import arrayset from '../arrayset'
 
 describe('immutable', () => {
   describe('contains', () => {
@@ -131,7 +131,7 @@ describe('mutable', () => {
     })
 
     test('to empty array', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).add(1)
       expect(a).toEqual([1])
     })
@@ -145,7 +145,7 @@ describe('mutable', () => {
     })
 
     test('empty', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).remove(1)
       expect(a).toEqual([])
     })
@@ -165,7 +165,7 @@ describe('mutable', () => {
     })
 
     test('left empty', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).union([5,6,7])
       expect(a).toEqual([5,6,7])
     })
@@ -177,7 +177,7 @@ describe('mutable', () => {
     })
 
     test('both empty', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).union([])
       expect(a).toEqual([])
     })
@@ -197,7 +197,7 @@ describe('mutable', () => {
     })
 
     test('left empty', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).intersection([4,5,6])
       expect(a).toEqual([])
     })
@@ -217,7 +217,7 @@ describe('mutable', () => {
     })
 
     test('left empty', () => {
-      const a = []
+      const a: number[] = []
       arrayset.mutable(a).minus([2])
       expect(a).toEqual([])
     })

@@ -1,6 +1,6 @@
 {
   "name": "arraysetjs",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "build/arrayset.js",
   "browser": "build/arrayset.js",
   "author": "Ethan Brown <ethan@vms-inc.com>",
@@ -16,12 +16,20 @@
     "prepublishOnly": "tsc"
   },
   "jest": {
-    "testPathIgnorePatterns": ["\\.d\\.ts$"]
+    "testPathIgnorePatterns": [
+      "\\.d\\.ts$"
+    ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^27.0.2"
+  },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
     "@tsconfig/recommended": "^1.0.1",
-    "jest": "^25.1.0",
+    "babel-jest": "^27.3.0",
+    "jest": "^27.3.0",
     "typescript": "^4.4.4"
   }
 }

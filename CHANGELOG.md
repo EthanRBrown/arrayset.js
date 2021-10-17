@@ -1,3 +1,7 @@
+# v1.0.12
+
+* Converted source files to TypeScript, added minimal typing
+
 # v1.0.11
 
 * Switches to `tsc` for build output; now TypeScript declaration files are emitted
