@@ -1,3 +1,8 @@
+# v1.0.11
+
+* Switches to `tsc` for build output; now TypeScript declaration files are emitted
+* Tests now include source code and built output
+
 # v1.0.10
 
 * Adds `fromArray` method to create arrayset instance from JavaScript array (removing duplicates).  Thanks to @alspdx for the work!
