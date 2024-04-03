@@ -3,10 +3,11 @@
   "version": "1.0.12",
   "main": "build/arrayset.js",
   "browser": "build/arrayset.js",
-  "author": "Ethan Brown <ethan@vms-inc.com>",
+  "author": "Ethan Brown <ethan@zepln.com>",
   "contributors": [
-    "Ethan Brown <ethan@vms-inc.com>",
-    "Adam Baroni <adam@vms-inc.com>"
+    "Ethan Brown <ethan@zepln.com>",
+    "Adam Baroni <adam@vms-inc.com>",
+    "pc-erin (https://github.com/pc-erin)"
   ],
   "repository": "EthanRBrown/arrayset.js",
   "license": "(MIT OR GPL-3.0)",
