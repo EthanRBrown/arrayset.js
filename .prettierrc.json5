@@ -1,0 +1,6 @@
+{
+  printWidth: 115,
+  semi: false,
+  singleQuote: true,
+  arrowParens: 'avoid',
+}
