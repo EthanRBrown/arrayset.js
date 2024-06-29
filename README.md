@@ -6,6 +6,7 @@ This library also includes a mutable version (ideal for use with [Automerge](htt
 
 ## Notes
 
+- arrayset is now an ESM-only library; if you need CommonJS, use version 1.0.11 (versions 1.0.12 and 1.0.13 are broken). No, you won't have TypeScript types, but...you should really be using ESM!
 - arrayset will not itself introduce duplicates with any of its operations; however, it will not police the arrays you provide to remove duplicates.
 - arrayset does not guarantee the order of elements after set operations.
 - arrayset does not check arguments; make sure you're using it correctly!
@@ -62,9 +63,9 @@ set.mutable(a).union([3, 4]) // a is now [1, 2, 3, 4]
 This is a small library without a lot of activity, so generally I'll accept any reasonable enhancements. If there are big changes you would like to see, please raise an issue first to discuss.
 
 1. Fork repository
-2. Make code changes & write tests (in _src\_\_tests\_\__)
-3. Make sure all tests pass (`yarn test`)
-4. Make sure build is successful (`yarn build`)
+2. Make code changes & write tests (in \_src\_\_tests\_\_\_)
+3. Make sure all tests pass (`pnpm test`)
+4. Make sure build is successful (`pnpm build`)
 5. Update _README.md_ with documentation (if necessary)
 
 Do not update _CHANGELOG.md_; the maintainer will do that with version releases.
